@@ -14,6 +14,6 @@
         public bool IsDeleted { get; set; }
 
         public void SetAsDeleted() => IsDeleted = true;
-        
+
     }
 }

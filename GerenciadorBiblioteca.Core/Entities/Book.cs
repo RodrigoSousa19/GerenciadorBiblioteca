@@ -2,7 +2,7 @@
 {
     public class Book : BaseEntity
     {
-        public Book(){}
+        public Book() { }
         public Book(string title, string author, string isbn, int publicationYear)
         {
             Title = title;
