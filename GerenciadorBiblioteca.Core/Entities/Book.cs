@@ -20,5 +20,13 @@
 
         public void SetAvailableForLoan() => AvailableForLoan = true;
         public void SetUnavailableForLoan() => AvailableForLoan = false;
+
+        public void Update(string title, string author, string isbn, int publicationYear)
+        {
+            Title = title;
+            Author = author;
+            ISBN = isbn;
+            PublicationYear = publicationYear;
+        }
     }
 }

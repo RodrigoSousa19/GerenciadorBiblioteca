@@ -24,5 +24,10 @@
 
         public void SetLoanInProgress() => LoanInProgress = true;
         public void ReturnBook() => LoanInProgress = false;
+
+        public void Update(DateTime newReturnDate)
+        {
+            ReturnDate = newReturnDate;
+        }
     }
 }
