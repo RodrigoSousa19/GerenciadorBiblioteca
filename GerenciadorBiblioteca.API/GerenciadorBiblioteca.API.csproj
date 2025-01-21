@@ -17,12 +17,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\GerenciadorBiblioteca.Application\GerenciadorBiblioteca.Application.csproj" />
+    <ProjectReference Include="..\GerenciadorBiblioteca.Core\GerenciadorBiblioteca.Core.csproj" />
+    <ProjectReference Include="..\GerenciadorBiblioteca.Infrastructure\GerenciadorBiblioteca.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GerenciadorBiblioteca.Application\GerenciadorBiblioteca.Application.csproj" />
-    <ProjectReference Include="..\GerenciadorBiblioteca.Core\GerenciadorBiblioteca.Core.csproj" />
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>
