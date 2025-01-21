@@ -18,8 +18,6 @@
         public int PublicationYear { get; private set; }
         public bool AvailableForLoan { get; private set; }
 
-        public List<Loan> Loans { get; private set; }
-
         public void SetAvailableForLoan() => AvailableForLoan = true;
         public void SetUnavailableForLoan() => AvailableForLoan = false;
     }
