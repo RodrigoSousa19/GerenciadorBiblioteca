@@ -1,4 +1,4 @@
-﻿namespace GerenciadorBiblioteca.Core.DTO.Loans
+﻿namespace GerenciadorBiblioteca.Application.DTO.Loans
 {
     public class UpdateLoanDto
     {

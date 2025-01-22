@@ -1,4 +1,4 @@
-﻿using GerenciadorBiblioteca.Core.DTO.Books;
+﻿using GerenciadorBiblioteca.Application.DTO.Books;
 using GerenciadorBiblioteca.Core.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
 

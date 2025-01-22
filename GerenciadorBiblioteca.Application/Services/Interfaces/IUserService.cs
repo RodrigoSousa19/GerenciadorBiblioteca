@@ -1,4 +1,4 @@
-﻿using GerenciadorBiblioteca.Core.DTO.Users;
+﻿using GerenciadorBiblioteca.Application.DTO.Users;
 
 namespace GerenciadorBiblioteca.Core.Interfaces.Services
 {

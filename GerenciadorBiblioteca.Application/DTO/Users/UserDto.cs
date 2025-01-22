@@ -1,6 +1,6 @@
 ﻿using GerenciadorBiblioteca.Core.Entities;
 
-namespace GerenciadorBiblioteca.Core.DTO.Users
+namespace GerenciadorBiblioteca.Application.DTO.Users
 {
     public class UserDto
     {

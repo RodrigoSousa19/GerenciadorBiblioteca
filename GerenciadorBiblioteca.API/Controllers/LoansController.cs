@@ -1,4 +1,4 @@
-﻿using GerenciadorBiblioteca.Core.DTO.Loans;
+﻿using GerenciadorBiblioteca.Application.DTO.Loans;
 using GerenciadorBiblioteca.Core.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
 

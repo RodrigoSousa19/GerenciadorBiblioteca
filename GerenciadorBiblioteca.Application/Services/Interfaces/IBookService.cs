@@ -1,4 +1,4 @@
-﻿using GerenciadorBiblioteca.Core.DTO.Books;
+﻿using GerenciadorBiblioteca.Application.DTO.Books;
 
 namespace GerenciadorBiblioteca.Core.Interfaces.Services
 {

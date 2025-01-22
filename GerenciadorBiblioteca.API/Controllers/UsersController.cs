@@ -1,4 +1,4 @@
-﻿using GerenciadorBiblioteca.Core.DTO.Users;
+﻿using GerenciadorBiblioteca.Application.DTO.Users;
 using GerenciadorBiblioteca.Core.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
 

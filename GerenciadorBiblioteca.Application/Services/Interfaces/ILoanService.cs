@@ -1,4 +1,4 @@
-﻿using GerenciadorBiblioteca.Core.DTO.Loans;
+﻿using GerenciadorBiblioteca.Application.DTO.Loans;
 
 namespace GerenciadorBiblioteca.Core.Interfaces.Services
 {

@@ -1,6 +1,6 @@
 ﻿using GerenciadorBiblioteca.Core.Entities;
 
-namespace GerenciadorBiblioteca.Core.DTO.Loans
+namespace GerenciadorBiblioteca.Application.DTO.Loans
 {
     public class LoanItemDto
     {

@@ -1,6 +1,6 @@
 ﻿using GerenciadorBiblioteca.Core.Entities;
 
-namespace GerenciadorBiblioteca.Core.DTO.Books
+namespace GerenciadorBiblioteca.Application.DTO.Books
 {
     public class CreateBookDto
     {
