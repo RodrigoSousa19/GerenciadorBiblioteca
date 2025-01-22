@@ -1,4 +1,4 @@
-﻿using GerenciadorBiblioteca.Application.DTOs.Users;
+﻿using GerenciadorBiblioteca.Core.DTO.Users;
 using GerenciadorBiblioteca.Core.Entities;
 using GerenciadorBiblioteca.Core.Interfaces.Repositories;
 using GerenciadorBiblioteca.Core.Interfaces.Services;

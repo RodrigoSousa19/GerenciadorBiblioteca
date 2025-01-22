@@ -1,4 +1,4 @@
-﻿using GerenciadorBiblioteca.Application.DTOs.Books;
+﻿using GerenciadorBiblioteca.Core.DTO.Books;
 using GerenciadorBiblioteca.Core.Interfaces.Repositories;
 using GerenciadorBiblioteca.Core.Interfaces.Services;
 

@@ -1,4 +1,4 @@
-﻿using GerenciadorBiblioteca.Application.DTOs.Loans;
+﻿using GerenciadorBiblioteca.Core.DTO.Loans;
 using GerenciadorBiblioteca.Core.Interfaces.Repositories;
 using GerenciadorBiblioteca.Core.Interfaces.Services;
 

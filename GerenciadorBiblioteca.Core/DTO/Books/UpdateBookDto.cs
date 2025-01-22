@@ -1,4 +1,4 @@
-﻿namespace GerenciadorBiblioteca.Application.DTOs.Books
+﻿namespace GerenciadorBiblioteca.Core.DTO.Books
 {
     public class UpdateBookDto
     {
