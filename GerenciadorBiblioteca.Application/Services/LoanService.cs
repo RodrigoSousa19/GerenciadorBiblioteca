@@ -1,4 +1,5 @@
 ﻿using GerenciadorBiblioteca.Core.DTO.Loans;
+using GerenciadorBiblioteca.Core.Entities;
 using GerenciadorBiblioteca.Core.Interfaces.Repositories;
 using GerenciadorBiblioteca.Core.Interfaces.Services;
 
@@ -7,10 +8,12 @@ namespace GerenciadorBiblioteca.Application.Services
     public class LoanService : ILoanService
     {
         private readonly ILoanRepository _repository;
+        private readonly IBookService _bookService;
 
-        public LoanService(ILoanRepository repository)
+        public LoanService(ILoanRepository repository, IBookService bookService)
         {
             _repository = repository;
+            _bookService = bookService;
         }
 
         public async Task Create(CreateLoanDto model)
@@ -18,6 +21,8 @@ namespace GerenciadorBiblioteca.Application.Services
             var loan = model.ToEntity();
 
             await _repository.Create(loan);
+
+            await _bookService.SetUnavailableForLoan(loan.IdBook);
         }
 
         public async Task<List<LoanDto>> GetAll()
@@ -32,6 +37,9 @@ namespace GerenciadorBiblioteca.Application.Services
         public async Task<LoanDto> GetById(int id)
         {
             var loan = await _repository.GetById(id);
+
+            if (loan is null)
+                return null;
 
             var dto = LoanDto.FromEntity(loan);
 
@@ -66,7 +74,10 @@ namespace GerenciadorBiblioteca.Application.Services
             }
 
             loan.ReturnBook();
+
             await _repository.Update(loan);
+            await _bookService.SetAvailableForLoan(loan.IdBook);
+
             return loan.ReturnDate.Date >= DateTime.Now.Date ? "Devolvido no prazo!" : "Empréstimo finalizado com atraso!"; ;
 
         }

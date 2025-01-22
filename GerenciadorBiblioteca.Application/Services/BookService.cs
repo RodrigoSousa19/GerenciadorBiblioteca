@@ -24,6 +24,9 @@ namespace GerenciadorBiblioteca.Application.Services
         {
             var book = await _repository.GetById(id);
 
+            if (book is null)
+                return null;
+
             var dto = BookDto.FromEntity(book);
 
             return dto;
