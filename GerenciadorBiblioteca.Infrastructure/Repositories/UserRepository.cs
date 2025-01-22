@@ -19,9 +19,9 @@ namespace GerenciadorBiblioteca.Infrastructure.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task<User> GetById(int id) => await _context.Users.Include(l => l.BookLoans).SingleOrDefaultAsync(b => b.Id == id && !b.IsDeleted);
+        public async Task<User> GetById(int id) => await _context.Users.SingleOrDefaultAsync(b => b.Id == id && !b.IsDeleted);
 
-        public async Task<List<User>> GetAll() => await _context.Users.ToListAsync();
+        public async Task<List<User>> GetAll() => await _context.Users.Where(u => !u.IsDeleted).ToListAsync();
 
         public async Task Update(User user)
         {

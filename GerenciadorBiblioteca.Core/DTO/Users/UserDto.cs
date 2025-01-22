@@ -4,17 +4,14 @@ namespace GerenciadorBiblioteca.Core.DTO.Users
 {
     public class UserDto
     {
-        public UserDto(string name, string email, List<Loan> bookLoans)
+        public UserDto(string name, string email)
         {
             Name = name;
             Email = email;
-            BookLoans = bookLoans;
         }
         public string Name { get; private set; }
         public string Email { get; private set; }
 
-        public List<Loan> BookLoans { get; private set; }
-
-        public static UserDto FromEntity(User user) => new UserDto(user.Name, user.Email, user.BookLoans);
+        public static UserDto FromEntity(User user) => new UserDto(user.Name, user.Email);
     }
 }

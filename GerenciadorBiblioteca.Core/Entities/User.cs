@@ -11,7 +11,5 @@
 
         public string Name { get; private set; }
         public string Email { get; private set; }
-
-        public List<Loan> BookLoans { get; private set; }
     }
 }

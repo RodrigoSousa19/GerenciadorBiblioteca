@@ -11,8 +11,8 @@ namespace GerenciadorBiblioteca.Infrastructure.Data.Configurations
             builder.HasKey(l => l.Id);
 
             builder.HasOne(l => l.User)
-                   .WithMany(u => u.BookLoans)
-                   .HasForeignKey(l => l.IdUser)
+                   .WithOne()
+                   .HasForeignKey<Loan>(l => l.IdUser)
                    .OnDelete(DeleteBehavior.Restrict);
 
             builder.HasOne(l => l.Book)
