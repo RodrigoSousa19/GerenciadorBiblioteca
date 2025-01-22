@@ -22,7 +22,7 @@ namespace GerenciadorBiblioteca.Infrastructure.Repositories
 
         public async Task<Loan> GetById(int id) => await _context.Loans.Include(u => u.User).Include(b => b.Book).SingleOrDefaultAsync(b => b.Id == id && !b.IsDeleted);
 
-        public async Task<List<Loan>> GetAll() => await _context.Loans.Include(u => u.User).Include(b => b.Book).ToListAsync();
+        public async Task<List<Loan>> GetAll() => await _context.Loans.Where(u => !u.IsDeleted).Include(u => u.User).Include(b => b.Book).ToListAsync();
 
         public async Task Update(Loan loan)
         {
