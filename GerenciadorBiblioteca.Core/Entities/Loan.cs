@@ -28,6 +28,7 @@
         public void Update(DateTime newReturnDate)
         {
             ReturnDate = newReturnDate;
+            UpdatedAt = DateTime.Now;
         }
     }
 }

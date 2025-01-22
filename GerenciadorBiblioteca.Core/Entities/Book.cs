@@ -27,6 +27,7 @@
             Author = author;
             ISBN = isbn;
             PublicationYear = publicationYear;
+            UpdatedAt = DateTime.Now;
         }
     }
 }
