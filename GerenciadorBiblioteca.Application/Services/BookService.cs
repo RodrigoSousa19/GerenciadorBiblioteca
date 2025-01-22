@@ -1,6 +1,6 @@
 ﻿using GerenciadorBiblioteca.Application.DTO.Books;
+using GerenciadorBiblioteca.Application.Services.Interfaces;
 using GerenciadorBiblioteca.Core.Interfaces.Repositories;
-using GerenciadorBiblioteca.Core.Interfaces.Services;
 
 namespace GerenciadorBiblioteca.Application.Services
 {

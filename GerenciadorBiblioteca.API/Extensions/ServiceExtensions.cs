@@ -1,6 +1,6 @@
 ﻿using GerenciadorBiblioteca.Application.Services;
 using GerenciadorBiblioteca.Core.Interfaces.Repositories;
-using GerenciadorBiblioteca.Core.Interfaces.Services;
+using GerenciadorBiblioteca.Application.Services.Interfaces;
 using GerenciadorBiblioteca.Infrastructure.Data;
 using GerenciadorBiblioteca.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;

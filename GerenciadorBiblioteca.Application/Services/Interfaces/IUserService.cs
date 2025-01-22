@@ -1,6 +1,6 @@
 ﻿using GerenciadorBiblioteca.Application.DTO.Users;
 
-namespace GerenciadorBiblioteca.Core.Interfaces.Services
+namespace GerenciadorBiblioteca.Application.Services.Interfaces
 {
     public interface IUserService
     {

@@ -1,6 +1,6 @@
 ﻿using GerenciadorBiblioteca.Application.DTO.Books;
 
-namespace GerenciadorBiblioteca.Core.Interfaces.Services
+namespace GerenciadorBiblioteca.Application.Services.Interfaces
 {
     public interface IBookService
     {

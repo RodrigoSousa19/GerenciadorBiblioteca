@@ -1,5 +1,5 @@
 ﻿using GerenciadorBiblioteca.Application.DTO.Loans;
-using GerenciadorBiblioteca.Core.Interfaces.Services;
+using GerenciadorBiblioteca.Application.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GerenciadorBiblioteca.API.Controllers
