@@ -1,17 +1,17 @@
-using GerenciadorBiblioteca.Infrastructure.Data;
-using Microsoft.EntityFrameworkCore;
+using GerenciadorBiblioteca.API.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var connectionString = builder.Configuration.GetConnectionString("GerenciadorBiblioteca");
-builder.Services.AddDbContext<GerenciadorBibliotecaDbContext>(o => o.UseSqlServer(connectionString));
+builder.Services.AddApplicationDbContext(builder.Configuration);
+builder.Services.AddServices();
+builder.Services.AddRepositories();
 
 var app = builder.Build();
 
