@@ -38,7 +38,7 @@ namespace GerenciadorBiblioteca.Application.Services
             return dto;
         }
 
-        public async Task Update(int id,UpdateLoanDto model)
+        public async Task Update(int id, UpdateLoanDto model)
         {
             var loan = await _repository.GetById(id);
 
@@ -59,12 +59,16 @@ namespace GerenciadorBiblioteca.Application.Services
         public async Task<string> ReturnBook(int id)
         {
             var loan = await _repository.GetById(id);
-            
+
+            if (!loan.LoanInProgress)
+            {
+                return "Este empréstimo não está mais em andamento!";
+            }
+
             loan.ReturnBook();
-
             await _repository.Update(loan);
-
             return loan.ReturnDate.Date >= DateTime.Now.Date ? "Devolvido no prazo!" : "Empréstimo finalizado com atraso!"; ;
+
         }
     }
 }
