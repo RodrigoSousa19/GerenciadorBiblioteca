@@ -1,5 +1,4 @@
 ﻿using GerenciadorBiblioteca.Core.DTO.Loans;
-using GerenciadorBiblioteca.Core.Entities;
 using GerenciadorBiblioteca.Core.Interfaces.Repositories;
 using GerenciadorBiblioteca.Core.Interfaces.Services;
 

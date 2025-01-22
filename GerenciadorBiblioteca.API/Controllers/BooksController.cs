@@ -1,6 +1,5 @@
 ﻿using GerenciadorBiblioteca.Core.DTO.Books;
 using GerenciadorBiblioteca.Core.Interfaces.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GerenciadorBiblioteca.API.Controllers

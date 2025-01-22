@@ -44,9 +44,9 @@ namespace GerenciadorBiblioteca.API.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id,UpdateLoanDto model)
+        public async Task<IActionResult> Put(int id, UpdateLoanDto model)
         {
-            await _service.Update(id,model);
+            await _service.Update(id, model);
 
             return NoContent();
         }

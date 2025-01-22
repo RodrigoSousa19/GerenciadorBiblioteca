@@ -1,5 +1,4 @@
 ﻿using GerenciadorBiblioteca.Core.DTO.Users;
-using GerenciadorBiblioteca.Core.Entities;
 using GerenciadorBiblioteca.Core.Interfaces.Repositories;
 using GerenciadorBiblioteca.Core.Interfaces.Services;
 
@@ -27,7 +26,7 @@ namespace GerenciadorBiblioteca.Application.Services
 
             if (user is null)
                 return null;
-            
+
             var dto = UserDto.FromEntity(user);
 
             return dto;

@@ -1,7 +1,5 @@
 ﻿using GerenciadorBiblioteca.Core.Entities;
 using Microsoft.EntityFrameworkCore;
-using System.Reflection.Emit;
-using System;
 
 namespace GerenciadorBiblioteca.Infrastructure.Data
 {

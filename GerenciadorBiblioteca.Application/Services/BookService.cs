@@ -41,7 +41,7 @@ namespace GerenciadorBiblioteca.Application.Services
             return dto;
         }
 
-        public async Task Update(int id,UpdateBookDto model)
+        public async Task Update(int id, UpdateBookDto model)
         {
             var book = await _repository.GetById(id);
 
